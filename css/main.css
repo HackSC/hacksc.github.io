@@ -1,3 +1,20 @@
+@import 'normalize.css';
+
+html {
+  box-sizing:border-box;
+}
+html *,
+html *:before,
+html *:after {
+  box-sizing:inherit;
+
+  font: 700 100% 'Space Mono', Monaco, Consolas, Courier-New, monospace;
+  /* FONT OPTIMIZATION */
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  -webkit-text-size-adjust:100%;
+}
+
 body {
   display: block;
   padding: 0;
@@ -8,15 +25,33 @@ body {
 
   background-color: #0BDDEF;
   color: #FFF;
+  font-size: 14px;
+}
 
-  font-family: 'Space Mono', Monaco, Consolas, Courier-New, monospace;
-  font-weight: 700;
-  font-size: 15px;
+button {
+  -webkit-appearance: none;
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  background-color: #FFFA00;
+  color: #0BDDEF;
+}
 
-  /* FONT OPTIMIZATION */
-  -webkit-font-smoothing:antialiased;
-  text-rendering:optimizeLegibility;
-  -webkit-text-size-adjust:100%;
+button:hover {
+  color: #F9728D;
+}
+
+input {
+  -webkit-appearance: none;
+  outline: none;
+  border: 0;
+  padding: 5px 10px;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-weight: 400;
 }
 
 /*#fallback {
@@ -81,10 +116,7 @@ body {
   transform: translate(1em, 1em);
 }
 
-#skyline {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
+#subscribe-form,
+#subscribe-confirm {
+  display: none;
 }
