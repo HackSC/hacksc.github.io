@@ -60,7 +60,7 @@ function validateEmail(email) {
 
 function postToSendgrid(email) {
   xhr = new XMLHttpRequest();
-  var url = 'http://104.236.130.114:5000/subscribe';
+  var url = 'http://server.hacksc.com:5000/subscribe';
   xhr.open('POST', url, true);
   xhr.setRequestHeader('Content-type', 'application/json');
   var data = JSON.stringify([{ email }]);
