@@ -59,14 +59,10 @@ function validateEmail(email) {
 }
 
 function postToSendgrid(email) {
-  // this key only has permissions to save email addresses
-  var saveEmailOnlyKey = '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';
-
   xhr = new XMLHttpRequest();
-  var url = 'https://api.sendgrid.com/v3/contactdb/recipients';
+  var url = 'http://104.236.130.114:5000/subscribe';
   xhr.open('POST', url, true);
   xhr.setRequestHeader('Content-type', 'application/json');
-  xhr.setRequestHeader('Authorization', 'Bearer ' + saveEmailOnlyKey);
   var data = JSON.stringify([{ email }]);
   xhr.send(data);
 }
