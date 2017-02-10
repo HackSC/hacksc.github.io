@@ -67,5 +67,5 @@ function postToSendgrid(email, cb) {
     if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) cb();
   }
   xhr.setRequestHeader('Content-type', 'application/json');
-  xhr.send({ email });
+  xhr.send(JSON.stringify({ email }));
 }
