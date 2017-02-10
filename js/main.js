@@ -37,14 +37,15 @@ window.onload = function () {
 
   function submitForm(email) {
     if (validateEmail(email)) {
-      postToSendgrid(email);
-      subscribeEmailInput.value = '';
-      subscribeForm.style.display = 'none';
-      subscribeConfirm.style.display = 'block';
-      setTimeout(function () {
-        subscribeConfirm.style.display = 'none';
-        subscribeToggleContainer.style.display = 'block';
-      }, 1500)
+      postToSendgrid(email, function() {
+        subscribeEmailInput.value = '';
+        subscribeForm.style.display = 'none';
+        subscribeConfirm.style.display = 'block';
+        setTimeout(function () {
+          subscribeConfirm.style.display = 'none';
+          subscribeToggleContainer.style.display = 'block';
+        }, 1500)
+      });
     } else {
       emailIsInvalid = true;
       subscribeEmailInput.style.color = '#F9728D';
@@ -58,11 +59,13 @@ function validateEmail(email) {
     return re.test(email);
 }
 
-function postToSendgrid(email) {
+function postToSendgrid(email, cb) {
   xhr = new XMLHttpRequest();
   var url = 'http://server.hacksc.com:5000/subscribe';
   xhr.open('POST', url, true);
+  xhr.onreadystatechange = function() {//Call a function when the state changes.
+    if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) cb();
+  }
   xhr.setRequestHeader('Content-type', 'application/json');
-  var data = JSON.stringify([{ email }]);
-  xhr.send(data);
+  xhr.send({ email });
 }
