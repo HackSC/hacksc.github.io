@@ -4,4 +4,5 @@ email: team@hacksc.com
 
 gems:
   - jekyll-redirect-from
+  - jekyll-redirect-to
   
