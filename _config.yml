@@ -1,2 +1,7 @@
+# Site settings
+title: HackSC
+email: team@hacksc.com
+
 gems:
   - jekyll-redirect-from
+  
