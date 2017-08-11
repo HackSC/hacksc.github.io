@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.f94d94ec.css",
   "main.css.map": "static/css/main.f94d94ec.css.map",
-  "main.js": "static/js/main.a8cc088b.js",
-  "main.js.map": "static/js/main.a8cc088b.js.map",
+  "main.js": "static/js/main.48d99738.js",
+  "main.js.map": "static/js/main.48d99738.js.map",
   "static/media/esri.png": "static/media/esri.a9e872cf.png",
   "static/media/google.png": "static/media/google.c7b4479a.png",
   "static/media/hacksclogo.png": "static/media/hacksclogo.ff10a942.png",
@@ -12,6 +12,7 @@
   "static/media/laskyline.png": "static/media/laskyline.bb038180.png",
   "static/media/laskylinereverse.png": "static/media/laskylinereverse.0189ff6b.png",
   "static/media/microsoft.png": "static/media/microsoft.0322b548.png",
+  "static/media/mlh.png": "static/media/mlh.9389d362.png",
   "static/media/starbackground.jpg": "static/media/starbackground.4bb74020.jpg",
   "static/media/ticketmaster.png": "static/media/ticketmaster.def1e158.png"
 }
