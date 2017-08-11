@@ -5,6 +5,7 @@ import microsoft from './microsoft.png';
 import esri from './esri.png';
 import heal from './heal.png';
 import ticketmaster from './ticketmaster.png';
+import mlh from './mlh.png';
 import './App.css';
 import FadeIn from 'react-fade-in';
 
@@ -38,18 +39,18 @@ class Splash extends Component {
 
         <br/> <br/>
         </h3>
-        <a href="http://www.google.com"><button type="button" className="apply"> APPLY NOW </button></a>
-        <a href="http://www.google.com"><button type="button" className="sponsor"> SPONSOR </button></a>
+        <a href="http://my.hacksc.com"><button type="button" className="apply"> APPLY NOW </button></a>
+        <a href="sponsorship.pdf"><button type="button" className="sponsor"> SPONSOR </button></a>
         <h3> <br/>
         LOCATION: <br/>
         University of Southern California <br/>
         Los Angeles, CA 90007 <br/>
         <br/>
         START: <br/>
-        Friday, Sept 29th, 10PM <br/>
+        Friday, Oct 27th, 10PM <br/>
         <br/>
         END: <br/>
-        Sunday, Oct 1st, 10AM <br/>
+        Sunday, Oct 29th, 10AM <br/>
         </h3>
         </div>
         </FadeIn>
@@ -146,9 +147,10 @@ class Sponsors extends Component {
           <img style={{maxWidth: "100vw", display: "block", margin: "auto", height: "400px"}} alt="Microsoft" src={microsoft} />
         </div>
         <div className="row">
-          <img style={{maxWidth: "100vw", display: "block", margin: "auto", height: "200px"}} alt="Heal" src={heal} />
+          <img style={{maxWidth: "100vw", display: "block", margin: "auto", height: "200px"}} alt="mlh" src={mlh} />
           <img style={{maxWidth: "100vw", display: "block", margin: "auto", height: "200px"}} alt="Google" src={google} />
           <img style={{maxWidth: "100vw", display: "block", margin: "auto", height: "200px"}} alt="Esri" src={esri} />
+          <img style={{maxWidth: "100vw", display: "block", margin: "auto", height: "200px"}} alt="Heal" src={heal} />
           <img style={{maxWidth: "100vw", display: "block", margin: "auto", height: "200px"}} alt="Ticketmaster" src={ticketmaster} />
         </div>
       </div>
