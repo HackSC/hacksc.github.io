@@ -131,7 +131,7 @@
 
 .splash-content {
   color: white;
-  font-size: 1.5em;
+  font-size: 1em;
   width: 80%;
   float: center;
   margin: 0 auto;
@@ -223,7 +223,7 @@ button.sponsor:hover {
   .splash-content {
   color: white;
   padding-top: 20vh;
-  font-size: 1.2em;
+  font-size: 1em;
   width: 40%;
   float: left;
   pointer-events: none;
@@ -323,7 +323,7 @@ button.sponsor:hover {
   .splash-content {
   color: white;
   padding-top: 20vh;
-  font-size: 1.2em;
+  font-size: 1em;
   width: 35%;
   float: left;
   pointer-events: none;
