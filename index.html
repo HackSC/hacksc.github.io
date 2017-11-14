@@ -10,11 +10,9 @@
     html {
       box-sizing: border-box;
     }
-
     html * , html * :before, html * :after {
         box-sizing: inherit;
     }
-
     body {
       font-family: 'Space Mono', Monaco, monospace;
       font-size: 13px;
@@ -28,7 +26,6 @@
       text-rendering: optimizeLegibility;
       -webkit-text-size-adjust: 100%;
     }
-
     #letter {
       max-width: 900px;
       padding: 50px;
@@ -37,6 +34,18 @@
       line-height: 1.4em;
       margin-bottom: 10em;
     }
+    @media screen and (max-width: 700px) {
+      #letter {
+        padding: 30px;
+        font-size: 16px;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      #letter {
+        padding: 20px;
+        font-size: 15px;
+      }
+    }
 
     #foot {
       display: block;
@@ -44,7 +53,6 @@
       width: 140px;
       height: auto;
     }
-
     p {
       margin-bottom: 1.4em;
     }
